@@ -1,0 +1,21 @@
+{
+  "name": "fabricadeapps",
+  "version": "1.0.0",
+  "description": "Projeto de Aprendizagem FrabicaDeApps <br>\r Projeto dedicado a aprendizagem de javascript e tecnologias relacionadas para o desenvolvimento de aplicações móveis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/math-osorio/fabricadeapps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/math-osorio/fabricadeapps/issues"
+  },
+  "homepage": "https://github.com/math-osorio/fabricadeapps#readme"
+}
