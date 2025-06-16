@@ -4,8 +4,8 @@ Projeto dedicado a aprendizagem de javascript e tecnologias relacionadas para o 
 🚀 Começando
 Primeiro quero te dar as instruções que vão permitir que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento, teste e claro, aprendizado.
 
-📋 Pré-requisitos para clonar o projeto
-  ✔️ Ter o Git instalado na sua máquina.
+📋 Pré-requisitos para clonar o projeto <br>
+  ✔️ Ter o Git instalado na sua máquina.<br>
   ✔️ Ter um terminal (cmd, PowerShell, Terminal do VSCode ou Bash).
 
 Mão na massa, vamos clonar pelo GIT 🔧 utilize esse processo já como aprendizado, você irá precisa clonar repositórios com frequência ao longa da sua jornada.
@@ -21,7 +21,7 @@ Clique no botão verde <> Code.
 Vai aparecer uma caixinha com opções:
 
 HTTPS:
-https://github.com/math-osorio/fabricadeapps.git
+https://github.com/math-osorio/fabricadeapps.git <br>
 
 SSH: (recomendado se você tiver chave SSH configurada)
 git@github.com:math-osorio/fabricadeapps.git
@@ -44,11 +44,8 @@ O Git vai criar uma pasta com o nome do repositório no diretório onde você ex
 ✅ Entre na pasta:
 
 
-cd fabricadeapps
-Pronto! Agora o projeto é seu localmente. Você pode abrir no VSCode, rodar, editar, versionar e até enviar melhorias para o repositório remoto se quiser (através de git push).
-
-⚡ Dicas Ninja:
-Quer clonar e já renomear a pasta? Faz assim:
+cd fabricadeapps <br>
+Pronto! Agora o projeto é seu localmente. Você pode abrir no VSCode, rodar, editar, versionar e até enviar melhorias para o repositório remoto se quiser (através de git push). <br><br>
 
 
 🛠️ Construído com
