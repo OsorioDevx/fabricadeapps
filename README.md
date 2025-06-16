@@ -49,7 +49,7 @@ Pronto! Agora o projeto é seu localmente. Você pode abrir no VSCode, rodar, ed
 
 
 🛠️ Construído com
-JavaScript
+JavaScript <br>
 VS Code
 
 📌 Versão
