@@ -53,7 +53,7 @@ JavaScript <br>
 VS Code
 
 📌 Versão
-1.0.1
+1.0.0
 
 ✒️ Autores
 Matheus Osório
