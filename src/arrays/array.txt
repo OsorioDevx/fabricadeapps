@@ -1,0 +1,35 @@
+let lista = ["Matheus", "Marcos", "Joao", 150]
+undefined
+lista[2]
+'Joao'
+lista.indexof
+undefined
+lista.indexOf("Matheus")
+0
+lista.indexOf("matheus")
+-1
+lista.push["Henrique"]
+undefined
+lista
+(4) ['Matheus', 'Marcos', 'Joao', 150]
+lista.push('Henrique');
+5
+lista
+(5) ['Matheus', 'Marcos', 'Joao', 150, 'Henrique']
+lista.push(200);
+6
+lista
+(6) ['Matheus', 'Marcos', 'Joao', 150, 'Henrique', 200]
+lista.shift();
+'Matheus'
+lista
+(5) ['Marcos', 'Joao', 150, 'Henrique', 200]
+lista.pop();
+200
+lista
+(4) ['Marcos', 'Joao', 150, 'Henrique']
+lista.join(' / ');
+'Marcos / Joao / 150 / Henrique'
+
+// arrays feitos no console
+// arrays são imutáveis, mas podem ser alterados

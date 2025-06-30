@@ -21,7 +21,7 @@ let chamado = prompt("Qual o número de protocolo do seu chamado?");
 //innerHTML é utilizado para escrever no HTML de uma forma mais segura e moderna
 document.getElementById("texto-div").innerHTML = `<h1>Protocolo ${chamado} aberto !</h1>`;
 document.getElementById("imagem-div").innerHTML = `<img src="https://cdn-icons-png.flaticon.com/512/10279/10279499.png" 
-alt="Ícone azul de documento com marca de seleção, representando protocolo aberto, sobre fundo branco"/>`;
+alt="Ícone azul de documento com marca de seleção, representando protocolo aberto, sobre fundo branco"/>`;b 
 
 
 
