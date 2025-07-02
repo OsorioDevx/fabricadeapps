@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMCalc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--primeiro vou criar um form que vai receber as informações do usuário-->
+    <!--onsubmit serve para quando o form for submetido ele vai executar a função que está dentro dele-->
+    <!--O event é um objeto especial que o navegador cria automaticamente toda vez que algum evento acontece como clicar num botão, mover o mouse, ou nesse caso, enviar um formulário.-->
+    <form onsubmit="return calcular(event)">
+        <label>Digite o seu peso: </label> <br>
+        <input type="text" name="peso" id="peso" placeholder="Peso em kg, exemplo: 120"> <br><br>
+
+        <label>Digite a sua altura: </label> <br>
+        <input type="text" name="altura" id="altura" placeholder="Altura em metros, ex: 1.80"> <br><br>
+
+        <input type="submit" value="CALCULAR IMC">
+    </form>
+    
+    <!--criei essa div para exibir o resultado da calculadora de IMC-->
+    <div id="resultado"></div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

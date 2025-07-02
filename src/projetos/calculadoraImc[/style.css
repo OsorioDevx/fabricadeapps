@@ -1,0 +1,76 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 320px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 0.7rem;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background: #0056b3;
+}
+
+#resultado {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Estilos por categoria de IMC */
+.muito-abaixo { background: #fdecea; color: #d9534f; }
+.abaixo       { background: #fff4e5; color: #f0ad4e; }
+.ideal        { background: #eafaf1; color: #5cb85c; }
+.acima        { background: #fff9e6; color: #f0ad4e; }
+.obesidade    { background: #f8d7da; color: #d9534f; }
+
+/* Responsividade */
+@media (max-width: 400px) {
+  form {
+    padding: 1rem;
+  }
+}
