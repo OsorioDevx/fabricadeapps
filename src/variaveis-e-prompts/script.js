@@ -23,5 +23,8 @@ document.getElementById("texto-div").innerHTML = `<h1>Protocolo ${chamado} abert
 document.getElementById("imagem-div").innerHTML = `<img src="https://cdn-icons-png.flaticon.com/512/10279/10279499.png" 
 alt="Ícone azul de documento com marca de seleção, representando protocolo aberto, sobre fundo branco"/>`;b 
 
+nome = "Marcos";
+idade = 18;
 
+console.log(`Olá, meu nome é ${nome}, eu tenho ${idade} anos`); //template string ``
 
