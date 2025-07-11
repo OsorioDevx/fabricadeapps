@@ -11,9 +11,14 @@ let tarefas = [];
 function renderTarefas(todo){
     listElement.innerHTML = ''; //limpa a lista antes de renderizar as tarefas
     
-    tarefas.map(
-        ()=>{
-            console.log(`tarefa: ${todo}`);
+    //Usando forEach ao invés de .map porque só quero exibir a lista na tela, não quero criar um novo array
+    tarefas.forEach(
+        (todo)=>{
+            let liElement = document.createElement("li");
+            let tarefaText = document.createTextNode(todo);
+
+            liElement.appendChild(tarefaText);
+            listElement.appendChild(liElement); 
         }
     )
 }
@@ -26,8 +31,11 @@ function adicionarTarefas(){
         return false;
 } else{
     let novaTarefa = inputElement.value; //pega o valor do input e armazena na variável novaTarefa
+    
     tarefas.push(novaTarefa); //adiciona a nova tarefa ao array tarefas
     inputElement.value = ''; //limpa o input após adicionar a tarefa
+
+    renderTarefas();
 }
 }
  
