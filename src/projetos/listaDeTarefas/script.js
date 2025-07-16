@@ -9,19 +9,18 @@ let buttonElement = document.querySelector('#app button');
 // O array vai ser usado pra armazenar as tarefas que o usuário adicionar
 let tarefas = [];
 
-function renderTarefas(todo){
+function renderTarefas(){
 
     listElement.innerHTML = ''; //limpa a lista antes de renderizar as tarefas
     
     //Usando forEach ao invés de .map porque só quero exibir a lista na tela, não quero criar um novo array
-    tarefas.forEach(
-        (todo)=>{
+    tarefas.forEach((todo)=>{
             let liElement = document.createElement("li");
             let tarefaText = document.createTextNode(todo);
 
             liElement.appendChild(tarefaText);
             listElement.appendChild(liElement); 
-        }
+        });
 
    
 }
