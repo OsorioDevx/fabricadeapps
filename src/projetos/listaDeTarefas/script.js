@@ -5,33 +5,34 @@ let listElement = document.querySelector('#app ul');
 let inputElement = document.querySelector('#app input');
 let buttonElement = document.querySelector('#app button');
 
-// Vou criar um array vazio para armazenar as tarefas
-// O array vai ser usado pra armazenar as tarefas que o usuário adicionar
-let tarefas = [];
+//vou recuperar meu array que esta no localstorage
+//como eu transformei o array em string, preciso transformá-lo novamente em array
+let tarefas = JSON.parse(localStorage.getItem("@listaTarefas")) || [];
 
 function renderTarefas(){
 
     listElement.innerHTML = ''; //limpa a lista antes de renderizar as tarefas
     
     //Usando forEach ao invés de .map porque só quero exibir a lista na tela, não quero criar um novo array
-    tarefas.forEach((todo)=>{
+    tarefas.forEach((todo, index)=>{
             let liElement = document.createElement("li");
-            let tarefaText = document.createTextNode(todo);
+            liElement.textContent = todo;
 
             let linkElement = document.createElement("a");
             linkElement.setAttribute("href", "#");
-            let linkText = document.createTextNode("  Excluir");
-            let posicao = tarefas.indexOf(todo);
+            linkElement.textContent = "  Excluir";
 
-            linkElement.setAttribute("onclick", `deltarefa(${posicao})`);
+            linkElement.addEventListener("click", () =>{
+                deltarefa(index);
+            });
 
-            linkElement.appendChild(linkText);
-            liElement.appendChild(tarefaText);
             liElement.appendChild(linkElement);
-            listElement.appendChild(liElement); 
+            listElement.appendChild(liElement);
         });
 
 }
+
+renderTarefas();
 
 function adicionarTarefas(){
     //condição para verificar se o input está vazio
@@ -46,6 +47,7 @@ function adicionarTarefas(){
     inputElement.value = ''; //limpa o input após adicionar a tarefa
 
     renderTarefas();
+    salvarDados();
 
 }
 }
@@ -56,9 +58,14 @@ buttonElement.onclick = adicionarTarefas;
 function deltarefa (posicao){
     tarefas.splice(posicao, 1);
     renderTarefas();
+    salvarDados();
 }
 
 
+function salvarDados(){
+    //vou converter minha lista para string para armazenar no localstorage
+    localStorage.setItem("@listaTarefas", JSON.stringify(tarefas))
+}
 
 
 
