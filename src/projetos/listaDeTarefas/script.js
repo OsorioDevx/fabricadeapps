@@ -18,11 +18,19 @@ function renderTarefas(){
             let liElement = document.createElement("li");
             let tarefaText = document.createTextNode(todo);
 
+            let linkElement = document.createElement("a");
+            linkElement.setAttribute("href", "#");
+            let linkText = document.createTextNode("  Excluir");
+            let posicao = tarefas.indexOf(todo);
+
+            linkElement.setAttribute("onclick", `deltarefa(${posicao})`);
+
+            linkElement.appendChild(linkText);
             liElement.appendChild(tarefaText);
+            liElement.appendChild(linkElement);
             listElement.appendChild(liElement); 
         });
 
-   
 }
 
 function adicionarTarefas(){
@@ -44,6 +52,12 @@ function adicionarTarefas(){
 
 // agora vamos atribuir a função adicionarTarefas ao evento de clique do botão
 buttonElement.onclick = adicionarTarefas; 
+
+function deltarefa (posicao){
+    tarefas.splice(posicao, 1);
+    renderTarefas();
+}
+
 
 
 
