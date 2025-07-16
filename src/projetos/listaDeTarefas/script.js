@@ -10,7 +10,7 @@ let buttonElement = document.querySelector('#app button');
 let tarefas = [];
 
 function renderTarefas(todo){
-<<<<<<< Updated upstream
+
     listElement.innerHTML = ''; //limpa a lista antes de renderizar as tarefas
     
     //Usando forEach ao invés de .map porque só quero exibir a lista na tela, não quero criar um novo array
@@ -22,17 +22,8 @@ function renderTarefas(todo){
             liElement.appendChild(tarefaText);
             listElement.appendChild(liElement); 
         }
-=======
-     // vou limpar a lista antes de renderizar as tarefas
-    listElement.innerHTML = '';
 
-    // aqui o tarefas.map é usado para criar um novo array com as tarefas
-    tarefas.map(
-        ()=>{
-            console.log(`tarefa: ${todo}`);
-        }   
->>>>>>> Stashed changes
-    )
+   
 }
 
 function adicionarTarefas(){
@@ -41,21 +32,14 @@ function adicionarTarefas(){
         alert('Digite uma tarefa!');
         return false;
 } else{
-<<<<<<< Updated upstream
+
     let novaTarefa = inputElement.value; //pega o valor do input e armazena na variável novaTarefa
     
     tarefas.push(novaTarefa); //adiciona a nova tarefa ao array tarefas
     inputElement.value = ''; //limpa o input após adicionar a tarefa
 
     renderTarefas();
-=======
-    //vou pegar o valor do input e armazenar na variável novaTarefa
-    let novaTarefa = inputElement.value; 
-    //adicionar a nova tarefa ao array tarefas
-    tarefas.push(novaTarefa); 
-    //limpar o input após adicionar a tarefa
-    inputElement.value = ''; 
->>>>>>> Stashed changes
+
 }
 }
 
