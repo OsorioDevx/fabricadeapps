@@ -26,13 +26,13 @@ function renderTarefas(){
                 deltarefa(index);
             });
  
-            liElement.appendChild(linkElement);   
+            liElement.appendChild(linkElement);
             listElement.appendChild(liElement);
         });
 
 }
 
-renderTarefas();    
+renderTarefas();
 
 function adicionarTarefas(){
     //condição para verificar se o input está vazio
